@@ -6,7 +6,7 @@ function App() {
   return (
     <div id="main">
 				{ /* Do not remove this main div!! */ }
-    var pHidden : true;
+    pHidden : true;
 		<button 
 			id="click" 
 			onClick={()=>{
