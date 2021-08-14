@@ -1,12 +1,17 @@
 import React, {Component, useState} from "react";
-import "./../styles/App.css";
+import '../styles/App.css';
 
-function App() {
-  
-  return (
-    <div id="main">
+class App extends Component {
+    constructor(props) {
+		super(props);
+	    
+	    this.state = { pHidden : true,
+	};
+    }
+    render() {
+    	return(
+    		<div id="main">
 				{ /* Do not remove this main div!! */ }
-    pHidden : true;
 		<button 
 			id="click" 
 			onClick={()=>{
@@ -19,7 +24,8 @@ function App() {
       </p>
     )}
     		</div>
-  );
+    	);
+    }
 }
 
 
